@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semantic Tags Example</title>
+</head>
+<body>
+  
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#intro">About</a>
+      <a href="#timeline">Contact</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="intro">
+      <h2>About HTML5</h2>
+      <p>HTML5 introduced semantic tags to improve the structure and accessibility of web pages.</p>
+    </section>
+    <article>
+      <h2>What is HTML?</h2>
+      <p><dfn>HTML</dfn> stands for <abbr title="HyperText Markup Language">HTML</abbr> and is used to structure content on the web.</p>
+    </article>
+    <section id="timeline">
+      <h2>Timeline of Web Development</h2>
+      <p>The following milestones highlight the history of web development:</p>
+      <dl>
+        <dt>1991</dt>
+        <dd>The first website was published by Tim Berners-Lee.</dd>
+        <dt>1995</dt>
+        <dd>JavaScript was introduced.</dd>
+        <dt>2014</dt>
+        <dd>HTML5 became the official standard.</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+        <h2> Contact Me </h2>
+      <form>
+        <!-- Text-based inputs -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="password">Password:</label>
+        <input type="password">     <br>
+        <label for="email">Email:</label>
+        <input type="email">        <br>
+        <label for="tel">Phone:</label>
+        <input type="tel">          <br>
+        <label for="url">Website:</label>
+        <input type="url">      <br>      
+        <label for="number">Number:</label>  
+        <input type="number">     <br>
+        <label for="textarea">Message:</label>
+        <input type="textarea">   <br>
+
+<!-- Date and Time -->
+<input type="date">         // Date picker (YYYY-MM-DD)
+<input type="datetime-local"> // Date and time picker
+<input type="month">        // Month and year picker
+<input type="time">         // Time picker (HH:mm)
+<input type="week">         // Week picker
+
+<!-- Selection inputs -->
+<input type="checkbox">     // Multiple-choice checkbox
+<input type="radio">        // Single-choice radio button
+<input type="range">        // Slider control
+<input type="color">        // Color picker
+
+<!-- File inputs -->
+<input type="file">         // File upload field
+
+<!-- Button inputs -->
+<input type="button">       // Clickable button
+<input type="submit">       // Form submission button
+<input type="reset">        // Form reset button
+<input type="image">        // Image as a submit button
+
+<!-- Hidden input -->
+<input type="hidden">       // Hidden field not displayed to users
+      </form>
+      </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
