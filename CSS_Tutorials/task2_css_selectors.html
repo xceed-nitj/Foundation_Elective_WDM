@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal Selector: Applies to all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Type Selector: Targets all <h1> elements */
+        h1 {
+            color: navy;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ID Selector: Targets the element with id="intro" */
+        #intro {
+            font-size: 18px;
+            color: darkgreen;
+            text-decoration: underline;
+        }
+
+        /* Class Selector: Targets all elements with class="highlight" */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* Grouping Selector: Applies styles to <h1>, <h2>, and <p> */
+        h1, h2, p {
+            margin: 10px;
+            font-family: Georgia, serif;
+        }
+
+        /* Descendant Selector: Targets <p> elements inside <div> */
+        div p {
+            font-style: italic;
+            color: gray;
+        }
+
+        /* Child Selector: Targets direct children <li> of <ul> */
+        ul > li {
+            list-style-type: square;
+            color: darkblue;
+        }
+
+        /* Adjacent Sibling Selector: Targets <p> directly after <h2> */
+        h2 + p {
+            color: brown;
+            font-weight: bold;
+        }
+
+        /* General Sibling Selector: Targets all <p> after <h2> */
+        h2 ~ p {
+            font-size: 14px;
+            color: rgb(83, 106, 10);
+        }
+
+        /* Attribute Selector: Targets <input> elements with type="text" */
+        input[type="text"] {
+            border: 5px solid rgb(185, 37, 37);
+            padding: 5px;
+            width: 200px;
+        }
+
+        /* Pseudo-class Selector: Targets the first child in <ul> */
+        ul li:first-child {
+            color: red;
+        }
+
+        /* Pseudo-element Selector: Adds content before <p> */
+        p::before {
+            content: "💡 ";
+            font-size: 18px;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS Selectors!</h1>
+    <h2>Subheading</h2>
+    <p>This paragraph comes directly after the h2 element.</p>
+    <p>This is another paragraph following the h2.</p>
+    <div>
+        <p>This paragraph is inside a <code>div</code> element.</p>
+    </div>
+    <ul>
+        <li>First item (first child)</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <p id="intro">This is a paragraph styled using an ID selector.</p>
+    <p class="highlight">This paragraph is styled using a class selector.</p>
+    <p>Another paragraph without a class or ID.</p>
+    <input type="text" placeholder="Type here...">
+</body>
+</html>
